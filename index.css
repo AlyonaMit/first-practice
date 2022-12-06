@@ -1,5 +1,64 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+body {
+    font-family: Sintony, sans-serif;
+    color: #000000;
+}
+
+.container {
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Shoes styles */
+
+.container--shoes {
+    padding-top: 154px;
+    padding-bottom: 155px;
+}
+
+.row {
+    display: flex;
+    gap: 31px;
+}
+
+.col-4 {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: calc(4 / 12 * 100%);
+}
+
+.col-8 {
+    /* flex-shrink: 0; /* не тре, бо в нас є гепи, бейб */
+    flex-grow: 0;
+    flex-basis: calc(8 / 12 * 100%);
+}
+
+.col {
+    flex-grow: 1;
+    flex-shrink: 1;
+} /* хай просто буде тут */
+
+.shoes-text {
+    font-size: 40px;
+    line-height: 1.4em;
+    word-break: normal;
+}
+
+
+
